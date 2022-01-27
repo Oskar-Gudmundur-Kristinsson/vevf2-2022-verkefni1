@@ -15,6 +15,8 @@
 .j { grid-area: j; }
 .k { grid-area: k; }
 .l { grid-area: l; }
+.m { grid-area: m; }
+.n { grid-area: n; }
 
 .grid-container {
   display: grid;
@@ -23,7 +25,8 @@
     'menu a a b b c c'
     'menu d d e e f f'
     'menu g g h h i i'
-    'menu j j k k l l';
+    'menu j j k k l l'
+    'menu m m n n . .';
   grid-gap: 10px;
   background-color: #f321e9;
   padding: 10px;
@@ -39,4 +42,9 @@
 
 h1 {
   text-align: center;
+}
+
+a {
+  color :rgba(255, 255, 255, 0.8);
+  text-decoration : none;
 }

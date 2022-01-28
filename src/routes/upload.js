@@ -1,7 +1,11 @@
-import multer from 'multer';
-import express from 'express';
+import multer from "multer";
+import express from "express";
 
 const upload = multer();
+
+const uploadRouter = express.Router();
+
+uploadRouter.get("/", (req, res) => {});
 
 /*
 app.post('/single', upload.single('data'), (req, res) => {
@@ -26,3 +30,5 @@ app.post('/many', upload.array('data'), (req, res) => {
 });
 */
 //  the data should be processed based on the route("/:id") where the id ie. /3 opens /data/data3.txt and processes it
+
+export { uploadRouter };

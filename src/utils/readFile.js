@@ -26,12 +26,11 @@ export default function getNumsFromFile(filePath) {
     } catch (err) {
         console.error(err);
     }
-
 }
 
 //input: list of European "numbers" as Strings
 //output: list of numbers
-function convertFromTerribleNumbersToGoodNumbers(nums) {
+export function convertFromTerribleNumbersToGoodNumbers(nums) {
     for(var i = 0; i < nums.length;i++){
         if(nums[i].includes(",")|| nums[i].includes(".")) {
             if(!(nums[i].includes("e") || nums[i].includes("#") )){
@@ -48,3 +47,6 @@ function convertFromTerribleNumbersToGoodNumbers(nums) {
     return nums;
 }
 
+function removeCommas(nums){
+    
+}

@@ -12,15 +12,14 @@ app.use("/static", express.static("public"));
 
 app.get("/", (req, res) => {
     async function renderAfterLoad(){
-        var nums = await getNumsFromFile("1.txt");
+        var nums = await getNumsFromFile("5.txt");
         var stats = getStats(nums);
         console.log(stats);
         res.render("index.ejs");
     }
 
     renderAfterLoad();
-    
-    
+
 });
 
 app.use("/data", dataRouter);

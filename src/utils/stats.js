@@ -1,5 +1,8 @@
 //assumes data is sorted
 export default function getStats(data){
+    if(data.length < 1){
+        return 0;
+    }
     var min = data[0];
     var max = data[0];
     var sum = 0;
@@ -17,23 +20,19 @@ export default function getStats(data){
     }
     mean = sum / data.length;
     var variance = (sq_sum / (data.length)) - (mean * mean);
-    console.log((sq_sum / (data.length)))
     var std = Math.sqrt(variance);
-    var qrts = findQuarters(data);
-    console.log(data.length);
-    return [variance,min,max,mean,(max-min),std,qrts[0],qrts[1],qrts[2],sum];
+    var median = findMedian(data);
+
+    return [variance,min,max,mean,(max-min),std,median,sum];
 }
 
-function findQuarters(data){
-    var ret = [NaN,NaN,NaN];
+export function findMedian(data){
+    var ret;
     if(data.length % 2 == 0){
-        ret[0] = data[data.length/4]
-        ret[1] = (data[(data.length+1)/2] + data[(data.length-1)/2])/2;
-        ret[2] = data[(data.length/4)*3]
+        var mid = data.length/2;
+        ret = (data[ ( Math.floor(mid) ) ] + data[(mid-1)]) / 2;
     } else{
-        ret[0] = (data[(data.length+1)/4] + data[(data.length-1)/4])/2;
-        ret[1] = data[data.length/2];
-        ret[2] = (data[((data.length+1)/4)*3] + data[((data.length+1)/4)*3])/2;
+        ret = data[Math.floor(data.length/2)];
     }
     return ret;
 }

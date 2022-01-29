@@ -1,6 +1,5 @@
 import assert from 'assert';
-import  getNumsFromFile from '../src/utils/readFile.js';
-import convertFromTerribleNumbersToGoodNumbers from '../src/utils/readFile.js';
+import getNumsFromFile from '../src/utils/readFile.js';
 
 describe('Opening the files', ()=>{
     it('opening the first test file', () => {
@@ -27,12 +26,4 @@ describe('Opening the files', ()=>{
         }
         getNumsFromFileTestHelper();
     })
-});
-
-describe('testing number conversion', ()=>{
-    it('should return numbers given European "numbers"', () => {
-        var x = convertFromTerribleNumbersToGoodNumbers(["123.456,789","1,0",""])
-        
-    })
-
 });

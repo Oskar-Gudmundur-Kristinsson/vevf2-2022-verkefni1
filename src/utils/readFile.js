@@ -1,8 +1,9 @@
 import fs from "fs";
+import convertFromTerribleNumbersToGoodNumbers from './convertNums.js';
 
 export default function getNumsFromFile(filePath) {
     try {
-        var path = process.cwd() + "/data/" + filePath;
+        var path = process.cwd() + "/data/" + filePath + ".txt";
         return new Promise((resolve, reject) => { 
             fs.readFile(path, "utf-8", function (err, data) {
                 var nums = data;
@@ -17,7 +18,6 @@ export default function getNumsFromFile(filePath) {
                 nums = nums.filter(Boolean);
                 //sort em while we are at it
                 nums.sort((a, b) => a - b);
-                console.log(nums);
 
                 resolve(nums);
             });
@@ -26,27 +26,4 @@ export default function getNumsFromFile(filePath) {
     } catch (err) {
         console.error(err);
     }
-}
-
-//input: list of European "numbers" as Strings
-//output: list of numbers
-export function convertFromTerribleNumbersToGoodNumbers(nums) {
-    for(var i = 0; i < nums.length;i++){
-        if(nums[i].includes(",")|| nums[i].includes(".")) {
-            if(!(nums[i].includes("e") || nums[i].includes("#") )){
-                var temp = nums[i].split(",");
-                if(nums[i].includes(".")){
-                    temp.forEach((item,index) => {
-                        temp[index] = item.split(".").join("");
-                    })
-                }
-                nums[i] = (temp.join("."));
-            }
-        }
-    }
-    return nums;
-}
-
-function removeCommas(nums){
-    
 }

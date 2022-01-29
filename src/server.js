@@ -14,7 +14,6 @@ app.get("/", (req, res) => {
     async function renderAfterLoad(){
         var nums = await getNumsFromFile("5.txt");
         var stats = getStats(nums);
-        console.log(stats);
         res.render("index.ejs");
     }
 

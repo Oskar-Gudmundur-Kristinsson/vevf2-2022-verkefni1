@@ -7,6 +7,7 @@ export default function getNumsFromFile(filePath) {
         return new Promise((resolve, reject) => { 
             fs.readFile(path, "utf-8", function (err, data) {
                 var nums = data;
+                console.log(path);
                 //split data into array with newline
                 nums = nums.split(/\r?\n/);
                 //remove empty elements

@@ -23,7 +23,18 @@ export default function getStats(data){
     var std = Math.sqrt(variance);
     var median = findMedian(data);
 
-    return [variance,min,max,mean,(max-min),std,median,sum];
+    var ret = {
+        variance : variance,
+        min : min,
+        max : max,
+        mean : mean,
+        range : (max-min),
+        std : std,
+        median : median,
+        sum : sum
+    }
+    
+    return ret;
 }
 
 export function findMedian(data){

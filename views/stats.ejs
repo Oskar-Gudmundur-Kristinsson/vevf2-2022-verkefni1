@@ -3,12 +3,17 @@
 <h3>THE STATS FOR <%=dataSetName%> </h3>
 
 <table>
-    <% stats.forEach((item, index) => { %>
-        <tr>
-            <th>
-                <%=%>
-            </th>
-        </tr>
-        
-    <% }); %>
+    <% if (Object.keys(stats).length > 0){ %>
+        <% for (let key in stats) { %>
+            <tr>
+                <th>
+                    <%= key %>
+                    <%= stats[key] %>
+                </th>
+            </tr>
+            
+        <% } %>
+    <% } else { %>
+        <h3>your dataSet has no numbers</h3>
+    <% } %>
 </table>

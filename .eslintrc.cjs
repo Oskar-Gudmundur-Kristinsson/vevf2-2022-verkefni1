@@ -1,14 +1,29 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: ["standard"],
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-  },
-  rules: {
-    semi: [4, "always"],
-  },
-};
+    env: {
+      browser: true,
+      es2021: true,
+    },
+    extends: ['prettier'],
+    parserOptions: {
+      ecmaVersion: 12,
+      sourceType: 'module',
+    },
+    rules: {
+      'no-restricted-syntax': 0,
+      'import/prefer-default-export': 0,
+      quotes: ['error', 'double'],
+      'no-console': [
+        'warn',
+        {
+          allow: ['warn', 'error', 'info', 'group', 'groupCollapsed', 'groupEnd'],
+        },
+      ],
+      'import/extensions': 0,
+      'max-len': ['warn', {
+        code: 100,
+        ignoreUrls: true,
+        ignoreComments: true,
+        ignoreTemplateLiterals: true,
+      }],
+    },
+  };

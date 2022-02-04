@@ -1,5 +1,3 @@
 [build]
-	base = "./"
-    command = "./gen-dist"
-    publish = "dist/"
+	base = "dist/"
 

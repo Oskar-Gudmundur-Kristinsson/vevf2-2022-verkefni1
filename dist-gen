@@ -4,7 +4,7 @@ curl_all() {
     curl 127.0.0.1:3000 > dist/index.html
     for i in {1..12};
     do
-        curl 127.0.0.1:3000/data/$i > dist/data/$i
+        curl 127.0.0.1:3000/data/$i > dist/data/$i.html
     done
 }
 
@@ -13,3 +13,4 @@ echo "this will take a sec"
 sleep 4
 $(curl_all)
 kill $!
+node tst.js

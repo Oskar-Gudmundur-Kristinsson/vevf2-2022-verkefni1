@@ -15,6 +15,6 @@ describe("Opening the files", () => {
   it("opening the third test file", async function () {
     const res = await getNumsFromFile("test3");
     const x = [2, 3];
-    assert.deepEqual(x, res);
+    assert.deepEqual(res, x);
   });
 });

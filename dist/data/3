@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DATA</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+
+<body>
+
+<a href="./index.html"><h1>BIG DATA IS THE FUUUUUTURE</h1></a>
+
+
+<div class = "table-div">
+    <table>
+        <h3>THE STATS FOR DATASET 3 </h3>
+        
+            <h3>your dataSet has no numbers</h3>
+        
+    </table>
+</div>
+
+<div class = "data-dump">
+    <h4>the dataset was</h4>
+    <p></p>
+</div>

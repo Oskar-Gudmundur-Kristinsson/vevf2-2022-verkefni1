@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DATA</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+
+<body>
+
+<a href="./index.html"><h1>BIG DATA IS THE FUUUUUTURE</h1></a>
+
+
+<div class = "table-div">
+    <table>
+        <h3>THE STATS FOR DATASET 5 </h3>
+        
+            
+                <tr>
+                    <td>variance</td>
+                    <td>24978988660416.258</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>min</td>
+                    <td>707.354</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>max</td>
+                    <td>28297200.123</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>mean</td>
+                    <td>1529698.9159</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>range</td>
+                    <td>28296492.769</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>std</td>
+                    <td>4997898.424379617</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>median</td>
+                    <td>588426</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>sum</td>
+                    <td>45890967.477</td>
+                </tr>
+                
+            
+        
+    </table>
+</div>
+
+<div class = "data-dump">
+    <h4>the dataset was</h4>
+    <p>707.354,15489,59859,83161,131567,235714,247349,343948,401211,412054,434916,498018,521169,521320,581366,595486,600730,605018,677247,722222,761358,765221,834857,855827,886148,915891,924374,995084,2966456,28297200.123</p>
+</div>

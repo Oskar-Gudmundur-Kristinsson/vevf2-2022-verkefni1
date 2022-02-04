@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DATA</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+
+<body>
+
+<a href="./index.html"><h1>BIG DATA IS THE FUUUUUTURE</h1></a>
+
+
+<div class = "table-div">
+    <table>
+        <h3>THE STATS FOR DATASET 1 </h3>
+        
+            
+                <tr>
+                    <td>variance</td>
+                    <td>47102.25</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>min</td>
+                    <td>299</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>max</td>
+                    <td>904</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>mean</td>
+                    <td>624.5</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>range</td>
+                    <td>605</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>std</td>
+                    <td>217.0305278065738</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>median</td>
+                    <td>647.5</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>sum</td>
+                    <td>2498</td>
+                </tr>
+                
+            
+        
+    </table>
+</div>
+
+<div class = "data-dump">
+    <h4>the dataset was</h4>
+    <p>299,607,688,904</p>
+</div>

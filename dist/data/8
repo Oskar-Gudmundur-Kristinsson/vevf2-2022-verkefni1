@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DATA</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+
+<body>
+
+<a href="./index.html"><h1>BIG DATA IS THE FUUUUUTURE</h1></a>
+
+
+<div class = "table-div">
+    <table>
+        <h3>THE STATS FOR DATASET 8 </h3>
+        
+            
+                <tr>
+                    <td>variance</td>
+                    <td>83304.40840000001</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>min</td>
+                    <td>2</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>max</td>
+                    <td>987</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>mean</td>
+                    <td>517.54</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>range</td>
+                    <td>985</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>std</td>
+                    <td>288.6250307925493</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>median</td>
+                    <td>521.5</td>
+                </tr>
+                
+            
+                <tr>
+                    <td>sum</td>
+                    <td>51754</td>
+                </tr>
+                
+            
+        
+    </table>
+</div>
+
+<div class = "data-dump">
+    <h4>the dataset was</h4>
+    <p>2,3,37,47,49,68,87,90,99,103,131,144,158,164,169,180,184,190,191,195,216,219,230,238,240,241,252,260,267,271,288,293,304,340,360,372,430,447,458,459,461,473,475,476,477,497,498,499,500,510,533,555,556,557,573,580,583,587,631,639,658,663,671,677,682,684,685,705,711,739,747,749,752,762,768,776,782,783,787,791,817,837,841,848,862,866,868,876,877,884,911,924,931,942,944,949,951,953,978,987</p>
+</div>

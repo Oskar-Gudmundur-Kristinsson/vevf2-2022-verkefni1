@@ -12,7 +12,6 @@ try {
                     data = data.replace('<a href="./data/'+i+'">', '<a href="./data/'+i+'.html">')// eslint-disable-line quotes
                 }
             
-                //console.log(data) // eslint-disable-line no-console
                 resolve(data);
             });
         });
@@ -21,9 +20,9 @@ try {
         let newHTML = await readF();
         fs.writeFile(path, newHTML, (err) => {
             if (err)
-                console.log(err);
+                console.log(err);// eslint-disable-line no-console
             else {
-                console.log("File written successfully\n");
+                console.log("File written successfully\n");// eslint-disable-line no-console
                 
             }
         });

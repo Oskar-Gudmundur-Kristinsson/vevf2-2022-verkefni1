@@ -14,3 +14,4 @@ sleep 4
 $(curl_all)
 kill $!
 node tst.js
+cp ./public/styles/styles.css ./dist/static/styles/styles.css

@@ -1,0 +1,113 @@
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+  text-align: left;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
+}
+
+.j {
+  grid-area: j;
+}
+
+.k {
+  grid-area: k;
+}
+
+.l {
+  grid-area: l;
+}
+
+.m {
+  grid-area: m;
+}
+
+.n {
+  grid-area: n;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header header header header header header"
+    "a a b b c c"
+    "d d e e f f"
+    "g g h h i i"
+    "j j k k l l"
+    "m m n n . .";
+  grid-gap: 10px;
+  background-color: #f321e9;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(0 0 0 / 20%);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
+
+.table-div {
+  width: 300px;
+  margin: auto;
+}
+
+.data-dump {
+  padding: 10%;
+  width: 80%;
+  word-wrap: break-word;
+  font: 1.2em "Fira Sans", serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

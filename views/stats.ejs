@@ -1,19 +1,23 @@
 <%- include('./partials/head'); %>
 
-<h3>THE STATS FOR <%=dataSetName%> </h3>
-
-<table>
-    <% if (Object.keys(stats).length > 0){ %>
-        <% for (let key in stats) { %>
-            <tr>
-                <th>
-                    <%= key %>
-                    <%= stats[key] %>
-                </th>
-            </tr>
-            
+<div class = "table-div">
+    <table>
+        <h3>THE STATS FOR <%=dataSetName%> </h3>
+        <% if (Object.keys(stats).length > 0){ %>
+            <% for (let key in stats) { %>
+                <tr>
+                    <td><%= key %></td>
+                    <td><%= stats[key] %></td>
+                </tr>
+                
+            <% } %>
+        <% } else { %>
+            <h3>your dataSet has no numbers</h3>
         <% } %>
-    <% } else { %>
-        <h3>your dataSet has no numbers</h3>
-    <% } %>
-</table>
+    </table>
+</div>
+
+<div class = "data-dump">
+    <h4>the dataset was</h4>
+    <p><%= dataSet %></p>
+</div>

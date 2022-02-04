@@ -66,12 +66,12 @@
 .grid-container {
   display: grid;
   grid-template:
-    "header header header header header header header"
-    "menu a a b b c c"
-    "menu d d e e f f"
-    "menu g g h h i i"
-    "menu j j k k l l"
-    "menu m m n n . .";
+    "header header header header header header"
+    "a a b b c c"
+    "d d e e f f"
+    "g g h h i i"
+    "j j k k l l"
+    "m m n n . .";
   grid-gap: 10px;
   background-color: #f321e9;
   padding: 10px;
@@ -85,11 +85,27 @@
   color: white;
 }
 
+.table-div {
+  width: 300px;
+  margin: auto;
+}
+
+.data-dump {
+  padding: 10%;
+  width: 80%;
+  word-wrap: break-word;
+  font: 1.2em "Fira Sans", serif;
+}
+
 h1 {
   text-align: center;
 }
 
 a {
-  color: rgb(255 255 255);
+  color: black;
   text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid black;
 }

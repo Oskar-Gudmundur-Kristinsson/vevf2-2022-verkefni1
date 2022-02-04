@@ -9,7 +9,7 @@ dataRouter.get("/:id", (req, res) => {
     const id = req.params.id;
     const nums = await getNumsFromFile(id);
     const stats = getStats(nums);
-    res.render("stats.ejs", { stats: stats, dataSetName: id , dataSet: nums}); // TODO make view for data
+    res.render("stats.ejs", { stats: stats, dataSetName: "DATASET "+id, dataSet: nums }); // TODO make view for data
   }
 
   renderAfterLoad();

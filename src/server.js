@@ -1,7 +1,6 @@
 import express from "express";
 import ejs from "ejs";
 import { dataRouter } from "./routes/data.js";
-import { uploadRouter } from "./routes/upload.js";
 
 const app = express();
 
@@ -17,8 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/data", dataRouter);
-app.use("/upload", uploadRouter);
 
 app.listen(3000, () => {
-  console.log("Server running at http://127.0.0.1:3000/");
+  console.log("Server running at http://127.0.0.1:3000/"); // eslint-disable-line no-console
 });
